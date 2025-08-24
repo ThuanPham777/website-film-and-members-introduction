@@ -1,0 +1,93 @@
+
+/* Hiệu ứng chạy chữ */
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Fade-in */
+.animate-fadeIn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.animate-fadeIn.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide-up */
+.animate-slideUp {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-in-out;
+}
+
+.animate-slideUp.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+/* Glow border effect */
+.glow-hover:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+            0 0 20px rgba(255, 0, 0, 0.6),
+            0 0 30px rgba(255, 0, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9),
+            0 0 40px rgba(255, 0, 0, 0.8),
+            0 0 60px rgba(255, 0, 0, 1);
+    }
+}
+

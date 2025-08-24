@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vượt Qua Định Kiến - Giới Thiệu</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="bg-black text-gray-200 font-sans">
+
+    <!-- Header -->
+    <header class="bg-black text-white py-6 shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">🎬 36 Studio</h1>
+            <nav class="space-x-6">
+                <a href="#poster" class="hover:text-red-500">Trang chủ</a>
+                <a href="#members" class="hover:text-red-500">Thành viên</a>
+                <a href="#behind-the-scenes" class="hover:text-red-500">Hậu trường</a>
+                <a href="#trailer" class="hover:text-red-500">Trailer</a>
+                <a href="#contact" class="hover:text-red-500">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Poster section-->
+    <section id="poster" class="relative h-[120vh] w-full mt-20">
+
+        <!-- Swiper (chạy 2 poster) -->
+        <div class="swiper mySwiper h-full">
+            <div class="swiper-wrapper">
+
+                <!-- Poster 1 -->
+                <div class="swiper-slide relative">
+                    <img src="./assets/poster1.png" alt="Poster 1" class="w-full h-full object-cover brightness-75">
+
+                    <!-- Tiêu đề -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 space-y-4">
+                        <h2
+                            class="text-5xl md:text-7xl font-cinzel font-bold text-white drop-shadow-2xl tracking-widest animate-fadeIn">
+                            VƯỢT QUA ĐỊNH KIẾN
+                        </h2>
+                        <p class="text-xl md:text-2xl italic text-gray-200 tracking-wide font-serif animate-slideUp">
+                            — Prejudice breaks, truth remains —
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Poster 2 -->
+                <div class="swiper-slide relative">
+                    <img src="./assets/poster2.png" alt="Poster 2" class="w-full h-full object-cover brightness-75">
+
+                    <!-- Tiêu đề -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 space-y-4">
+                        <h2
+                            class="text-5xl md:text-7xl font-cinzel font-bold text-white drop-shadow-2xl tracking-widest animate-fadeIn">
+                            VƯỢT QUA ĐỊNH KIẾN
+                        </h2>
+                        <p class="text-xl md:text-2xl italic text-gray-200 tracking-wide font-serif animate-slideUp">
+                            — Prejudice breaks, truth remains —
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút điều hướng -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Story chạy chữ (chung cho cả phim, đặt ngoài swiper) -->
+        <div id="story" class="absolute bottom-6 w-full overflow-hidden z-20">
+            <p class="marquee text-center text-gray-200 text-lg md:text-xl px-4 font-bold italic tracking-wide">
+                Câu chuyện xoay quanh Thiện, một sinh viên từ Thanh Hóa, mới chuyển lên Hà Nội học đại học.
+                Thiện bị bạn cùng lớp trêu chọc vì giọng nói và định kiến vùng miền. Trong một dự án nhóm môn học,
+                Thiện chứng minh năng lực và lòng tốt, giúp nhóm vượt qua khó khăn. Qua đó, các bạn nhận ra định kiến
+                của mình là sai lầm, cùng nhau xây dựng tình bạn không phân biệt vùng miền.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Thành viên -->
+    <!-- Thành viên -->
+    <section id="members" class="py-16 bg-gradient-to-b from-black via-gray-900 to-black">
+        <h2 class="text-3xl font-bold text-center text-red-500 mb-10 animate-slideUp">
+            👥 Thành Viên Nhóm & Vai Diễn
+        </h2>
+
+        <div id="members-container" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
+        </div>
+    </section>
+
+    <!-- HẬU TRƯỜNG -->
+    <section id="behind-the-scenes" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 animate-slideUp">🎬 Những Khoảnh Khắc Vui Nhộn Sau Hậu Trường</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Video Item -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg animate-slideUp">
+                    <video src="./video/video1.mp4" playsinline class="w-full h-64 object-cover transition duration-500"></video>
+                    <!-- Overlay -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition duration-500 p-4">
+                        <h3 class="text-xl font-semibold mb-2">😂 Diễn Viên Chính “Vỡ Vai”</h3>
+                        <p class="text-lg">Trong lúc quay một phân cảnh nghiêm túc, diễn viên chính bất ngờ bật cười khiến cả trường
+                            quay náo loạn.</p>
+                    </div>
+                    <!-- Play/Pause Button -->
+                    <button
+                        class="absolute inset-0 flex items-center justify-center text-white text-4xl opacity-0 group-hover:opacity-100 transition"
+                        onclick="toggleVideo(this)">
+                        ▶️
+                    </button>
+                </div>
+
+                <!-- Video Item -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg animate-slideUp">
+                    <video src="./video/video2.mp4" playsinline class="w-full h-64 object-cover transition duration-500"></video>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition duration-500 p-4">
+                        <h3 class="text-xl font-semibold mb-2">🤣 Khoảnh Khắc Cười Đùa</h3>
+                        <p class="text-lg">Các thành viên trong đoàn liên tục trêu chọc nhau, tạo nên bầu không khí đầy tiếng cười sau
+                            giờ quay căng thẳng.</p>
+                    </div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center text-white text-4xl opacity-0 group-hover:opacity-100 transition"
+                        onclick="toggleVideo(this)">
+                        ▶️
+                    </button>
+                </div>
+
+                <!-- Video Item -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg animate-slideUp">
+                    <video src="./video/video3.mp4" playsinline class="w-full h-64 object-cover transition duration-500"></video>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition duration-500 p-4">
+                        <h3 class="text-xl font-semibold mb-2">😂 Nghỉ Xả Hơi Sau Cảnh Khó</h3>
+                        <p class="text-lg">Diễn viên chính lăn ra sàn với dáng nằm "lột bụng" hài hước, khiến cả ekip cười nghiêng ngả.
+                        </p>
+                    </div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center text-white text-4xl opacity-0 group-hover:opacity-100 transition"
+                        onclick="toggleVideo(this)">
+                        ▶️
+                    </button>
+                </div>
+
+                <!-- Video Item -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg animate-slideUp">
+                    <video src="./video/video4.mp4" playsinline class="w-full h-64 object-cover transition duration-500"></video>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition duration-500 p-4">
+                        <h3 class="text-xl font-semibold mb-2">🎉 Ăn Mừng Hoàn Thành Bộ Phim</h3>
+                        <p class="text-lg">Khoảnh khắc đầy cảm xúc khi cả ekip cùng nâng ly và chia sẻ niềm vui sau ngày quay cuối.</p>
+                    </div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center text-white text-4xl opacity-0 group-hover:opacity-100 transition"
+                        onclick="toggleVideo(this)">
+                        ▶️
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trailer -->
+    <section id="trailer" class="py-16 bg-black text-center">
+        <h2 class="text-3xl font-bold text-red-500 mb-6 animate-slideUp">🎥 Trailer</h2>
+        <div class="relative w-full md:w-2/3 mx-auto shadow-lg rounded-2xl overflow-hidden animate-fadeIn">
+            <iframe class="w-full h-64 md:h-96" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-6 text-center">
+        <h2 class="text-xl font-semibold">Liên hệ với nhóm</h2>
+        <p>Email: <a href="mailto:nhomquayphim@gmail.com" class="underline">nhomquayphim@gmail.com</a></p>
+        <p>Facebook | Instagram | YouTube</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
